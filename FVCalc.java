@@ -9,7 +9,7 @@ public class FVCalc {
 		double sum = invest * Math.pow((decRate), (years));
 	      
 		System.out.println("After " + years + " years, $" + invest + " saved at " + 
-							rate + "% will yield $ " + (int)sum );
+							rate + "% will yield $" + (int)sum );
 }
 }
 

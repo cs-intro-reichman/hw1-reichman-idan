@@ -6,19 +6,25 @@ public class TimeFormat {
 		int minutes = Integer.parseInt("" + args[0].charAt(3) + args[0].charAt(4));
         // Replace this comment with the rest of your code
 		int newhours = hours%12;
+		String newmin = Integer.toString(minutes);
+		if (minutes< 10){
+			newmin = "0" + Integer.toString(minutes);
+		}
 		String AP = "PM"; 
 		if (hours < 12 && hours >= 0) {
 			AP = "AM";}
 		if (AP=="AM" && hours != 0) {
-			System.out.println(hours + ":" + minutes + " " + AP); }
+			System.out.println(hours + ":" + newmin + " " + AP); }
 		else {
 			if (hours != 0 && hours != 12) {
-				System.out.println(newhours + ":" + minutes + " " + AP);}
+				System.out.println(newhours + ":" + newmin + " " + AP);}
 			else {
 				if (hours == 0 ) {
 					newhours = newhours +12;
-					System.out.println(newhours + ":" + minutes + " " + AP);}
+					System.out.println(newhours + ":" + newmin + " " + AP);}
 				else {
-					System.out.println(hours + ":" + minutes + " " + AP);}}}
+					System.out.println(hours + ":" + newmin + " " + AP);}}}
+
+		
 	}
 }

@@ -8,7 +8,7 @@ public class Bill3 {
 		int bill = Integer.parseInt(args[3]);
 		double sum = Math.ceil( bill / 3.0 );
 	    // Replace this comment with the rest of your code   
-		System.out.println("Dear " + name3 + " , " + name2 + " and " + 
-							name1 + ": pay " + sum + " Shekels each." );
+		System.out.println("Dear " + name3 + ", " + name2 + ", and " + 
+							name1 + ": pay " + sum + " Shekels each" );
 	}
 }
