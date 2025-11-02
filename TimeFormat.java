@@ -21,10 +21,9 @@ public class TimeFormat {
 				System.out.println(newhours + ":" + newmin + " " + AP);}
 			else {
 				if (hours == 0 ) {
-					hours = hours+12;
 					System.out.println(hours + ":" + newmin + " " + AP);}
 				else {
-					System.out.println(newhours + ":" + newmin + " " + AP);}}}
+					System.out.println(hours + ":" + newmin + " " + AP);}}}
 
 		
 	}
