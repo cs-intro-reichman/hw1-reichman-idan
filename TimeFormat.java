@@ -27,4 +27,20 @@ public class TimeFormat {
 
 		
 	}
+
 }
+
+// Great catching for edge cases!
+// Note to use camelCase - for example: newHours instead of newhours
+// using the method "Integer.toString" isnt needed here
+// the name 'AP' isnt very clear..
+// it is very good that use see that 0 and 12 are treated differently from the others. 
+// But you gave them the same treatment - 
+//  if (hours == 0 ) {
+// System.out.println(hours + ":" + newmin + " " + AP);}
+// else {
+// System.out.println(hours + ":" + newmin + " " + AP);}}}
+// which is the same for both 0 and 12... 
+// if they are treated the same then no need for separating them. 
+// if they are treated differently - then treat them differently :)
+
