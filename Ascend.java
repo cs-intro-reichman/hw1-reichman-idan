@@ -16,3 +16,5 @@ public class Ascend {
 		System.out.println(abMin + " , " + Mid + " , " + abMax);
 	}
 }
+
+// Great naming for variables!
